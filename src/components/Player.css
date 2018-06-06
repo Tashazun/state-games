@@ -1,0 +1,8 @@
+:local(.player) {
+    padding: 5%;
+    border: 5px solid black;
+    
+    span {
+        font-weight: bolder;
+    }
+  }
