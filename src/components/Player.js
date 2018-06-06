@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import ChooseItem from '.ChooseItem';
 import styles from '.Player.css';
 
-export default class Player extends Component {
-
     static = {
         propTypes: {
             player: Proptypes.object.isRequired,
