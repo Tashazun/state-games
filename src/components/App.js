@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, /*Route, Redirect*/ } from 'react-router-dom';
-// import Game from './Game';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import Game from './Game';
 
 export default class App extends Component {
   render() {
@@ -9,8 +9,8 @@ export default class App extends Component {
         <div>
           <h1>The Scary Door</h1>
           <Switch>
-            {/* <Route path="/" component={Game}/> */}
-            {/* <Redirect to="/"/> */}
+            <Route path="/" component={Game}/> */}
+            {<Redirect to="/"/>}
           </Switch>
         </div>
       </Router>
