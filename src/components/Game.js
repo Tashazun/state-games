@@ -26,7 +26,6 @@ export default class Game extends Component {
       currentRoom.items.splice(0, 1);
       return { player, currentRoom };
     });
-    console.log(this.state.player, this.state.currentRoom);
   };
 
   render() {

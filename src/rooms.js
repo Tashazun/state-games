@@ -17,7 +17,7 @@ const northRoom = {
   description: 'You open the door on the northern most door and behind it you find an empty room save for a tall mirror hung on the the wall to your right. Entering cautiously you move to stand before it and see that in it\'s gleaming surface is a reflection of of the far wall. Written upon it is the letters "NAHTAIVEL" and beneath it is a wooden box on a table. You turn around in confusion and find that there is only the table in the room with you.',
   items: ['Mirror'],
   prevent: '',
-  question: '',
+  question: 'What is the Word?',
   answer: 'LEVIATHAN',
   doors: {
     s: 'centerRoom'
@@ -29,9 +29,14 @@ const eastRoom = {
   title: 'The East Room',
   image: 'https://i.imgur.com/tfdjJ5Gr.jpg',
   description: 'You enter through the east most door and in the room beyond find a low table with five coins',
-  items: [],
   doors: {
     w: 'centerRoom'
+  },
+  check(arr) {
+    if(arr.length === 3) {
+      this.description = 'You have WON!';
+    }
+    else return 'You have more tasks to complete!';
   }
 };
 
