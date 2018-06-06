@@ -5,7 +5,8 @@ export default class Riddle extends Component {
 
   static propTypes = {
     question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired
+    answer: PropTypes.string.isRequired,
+    onAnswer: PropTypes.func.isRequired
   };
 
   state = {
@@ -18,7 +19,7 @@ export default class Riddle extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    if(this.state.currentAnswer === this.props.answer) console.log('Correct!');
+    if(this.state.currentAnswer === this.props.answer) this.props.onAnswer();
   };
 
   render() {

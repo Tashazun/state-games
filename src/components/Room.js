@@ -21,7 +21,7 @@ export default class Room extends Component {
         <section style={{ backgroundImage: `url(${image})` }}>
           <h3>{title}</h3>
           <p>{description}</p>
-          <Riddle question={question} answer={answer} onAnswer={onPickup}/>
+          {(question) && <Riddle question={question} answer={answer} onAnswer={onPickup}/>}
           <h4>Doors</h4>
           <ul className="doors">
             {Object.entries(doors).map(([direction, roomKey]) => {
