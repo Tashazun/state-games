@@ -15,7 +15,7 @@ export default class Room extends Component {
 
     render() {
       const { room, onMove, onPickup } = this.props;
-      const { title, description, image, doors, question, answer } = room;
+      const { title, description, image, doors, question, answer, items } = room;
 
       return (
         <section style={{ backgroundImage: `url(${image})` }}>

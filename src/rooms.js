@@ -15,7 +15,7 @@ const northRoom = {
   title: 'The Mirror',
   image: 'https://toghs.files.wordpress.com/2008/02/inside-of-cabin1.jpg',
   description: 'You open the door on the northern most door and behind it you find an empty room save for a tall mirror hung on the the wall to your right. Entering cautiously you move to stand before it and see that in it\'s gleaming surface is a reflection of of the far wall. Written upon it is the letters "NAHTAIVEL" and beneath it is a wooden box on a table. You turn around in confusion and find that there is only the table in the room with you.',
-  items: [],
+  items: ['Mirror'],
   prevent: '',
   question: '',
   answer: 'LEVIATHAN',

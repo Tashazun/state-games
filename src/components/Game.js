@@ -20,8 +20,13 @@ export default class Game extends Component {
     }));
   };
 
-  handlePickup = item => {
-    console.log(item);
+  handlePickup = () => {
+    this.setState(({ player, currentRoom }) => {
+      player.inventory.push(currentRoom.items[0]);
+      currentRoom.items.splice(0, 1);
+      return { player, currentRoom };
+    });
+    console.log(this.state.player, this.state.currentRoom);
   };
 
   render() {
