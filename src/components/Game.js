@@ -20,6 +20,10 @@ export default class Game extends Component {
     }));
   };
 
+  handlePickup = item => {
+    console.log(item);
+  };
+
   render() {
     const { currentRoom } = this.state;
 
@@ -27,7 +31,8 @@ export default class Game extends Component {
       <section>
         <h2>Cabin of Horrors</h2>
         <Room room={currentRoom}
-          onMove={this.handleMove}/>
+          onMove={this.handleMove}
+          onPickup={this.handlePickup}/>
       </section>
     );
   }

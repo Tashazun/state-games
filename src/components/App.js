@@ -9,7 +9,7 @@ export default class App extends Component {
         <div>
           <h1>The Scary Door</h1>
           <Switch>
-            <Route path="/" component={Game}/> */}
+            <Route path="/" component={Game}/>
             {<Redirect to="/"/>}
           </Switch>
         </div>
